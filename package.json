@@ -1,5 +1,5 @@
 {
-  "name": "ant-design-pro",
+  "name": "electron-ant-design-pro",
   "version": "6.0.0",
   "private": true,
   "main": "./src/main/main.js",

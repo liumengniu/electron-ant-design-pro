@@ -3,8 +3,8 @@
 # 不继承其他任何配置（不配置打包会报错）
 extends: null
 # 构建配置
-appId: com.electron.anddesign.pro
-productName: electron-and-design-pro
+appId: com.electron.antdesign.pro
+productName: electron-ant-design-pro
 directories:
   buildResources: static
   # 指定构建输出目录
