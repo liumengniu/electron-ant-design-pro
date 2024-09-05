@@ -1,0 +1,57 @@
+#electron-builder配置文件
+
+# 不继承其他任何配置（不配置打包会报错）
+extends: null
+# 构建配置
+appId: com.electron.anddesign.pro
+productName: electron-and-design-pro
+directories:
+  buildResources: static
+  # 指定构建输出目录
+  output: release
+
+asar: true
+
+# Windows 特定配置
+win:
+  icon: "src/static/icons/256x256.png"
+  target:
+    - nsis
+    - zip
+  requestedExecutionLevel: "requireAdministrator"
+
+# Linux 特定配置
+linux:
+  icon: "src/static/icons/256x256.png"
+  target: AppImage
+  category: Electron React Program
+
+# 包含文件
+files:
+  - "dist/**/*"
+  - "src/main/*"
+  - "src/main/**/*"
+
+# 额外的资源目录
+extraResources:
+  - "extraResources/**"
+
+# NSIS 安装程序配置（仅适用于 Windows）
+nsis:
+  include: "scripts/installer.nsi"
+  oneClick: false
+  perMachine: true
+  menuCategory: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  installerIcon: "src/static/icons/favicon.ico"
+  uninstallerIcon: "src/static/icons/favicon.ico"
+  installerHeaderIcon: "src/static/icons/favicon.ico"
+
+# 自动更新配置
+publish:
+  provider: generic
+  url: "https://www.xxx.cn/client"
+
+
