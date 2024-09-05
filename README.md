@@ -7,7 +7,7 @@ This project is initialized with [Ant Design Pro](https://pro.ant.design). Follo
 Install `node_modules`:
 
 ```bash
-npm install
+npm install -f
 ```
 
 or
@@ -25,7 +25,7 @@ Scripts provided in `package.json`. It's safe to modify or add additional script
 ### Start project
 
 ```bash
-npm start
+npm start 
 ```
 
 ### Build project

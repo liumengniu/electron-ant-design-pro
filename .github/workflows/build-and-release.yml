@@ -30,7 +30,7 @@ jobs:
           sudo apt install --install-recommends winehq-stable
 
       - name: Install dependencies
-        run: npm install
+        run: npm install -f
 
       - name: Get package version
         id: get_version
