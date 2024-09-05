@@ -1,6 +1,6 @@
 {
   "name": "electron-ant-design-pro",
-  "version": "1.0.0",
+  "version": "6.0.0",
   "private": true,
   "main": "./src/main/main.js",
   "homepage": ".",
